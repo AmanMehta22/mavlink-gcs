@@ -1,0 +1,4 @@
+pymavlink==2.4.37
+websockets==12.0
+asyncio
+pyserial

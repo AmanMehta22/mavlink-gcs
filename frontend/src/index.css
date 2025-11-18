@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0f1b2d;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.connection-status {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.connected {
+  background: #10b981;
+  color: white;
+}
+
+.disconnected {
+  background: #ef4444;
+  color: white;
+}
+
+.connecting {
+  background: #f59e0b;
+  color: white;
+}
+
+.data-card {
+  background: #1e293b;
+  border-radius: 8px;
+  padding: 16px;
+  border-left: 4px solid #3b82f6;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.command-button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px;
+  transition: background 0.2s;
+}
+
+.command-button:hover {
+  background: #2563eb;
+}
+
+.command-button:disabled {
+  background: #6b7280;
+  cursor: not-allowed;
+}
+
+.telemetry-display {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.telemetry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.telemetry-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+.telemetry-item label {
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.telemetry-item .value {
+  font-weight: bold;
+  color: #e2e8f0;
+}
+
+.command-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+/* Map Styles */
+.leaflet-container {
+  background: #1a202c;
+  font-family: inherit;
+}
+
+.drone-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Popup styles */
+.leaflet-popup-content-wrapper {
+  background: #1e293b;
+  color: white;
+  border-radius: 8px;
+}
+
+.leaflet-popup-tip {
+  background: #1e293b;
+}
+
+.leaflet-popup-content {
+  margin: 12px;
+  font-family: inherit;
+}
+
+/* Map controls */
+.leaflet-control-zoom a {
+  background: #374151 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #4b5563 !important;
+}
